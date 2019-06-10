@@ -1,5 +1,5 @@
 package args;
 
-public class BoolRule {
+public class BoolRule implements MyRule{
 
 }

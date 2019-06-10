@@ -11,7 +11,7 @@ class MySchemaTest {
     void test_create_schema_with_bool() throws Exception{
         MySchema schema = new MySchema("l:bool");
         assertNotNull(schema);
-        assertNull(schema.getRule("l"));
+        assertNotNull(schema.getRule("l"));
 
     }
 
