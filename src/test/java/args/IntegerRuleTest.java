@@ -15,5 +15,4 @@ class IntegerRuleTest {
         IntegerRule rule = new IntegerRule();
         assertEquals(8080, rule.getValue("8080"));
     }
-
 }
