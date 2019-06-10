@@ -13,6 +13,7 @@ class MySchemaTest {
         assertNotNull(schema);
         assertNotNull(schema.getRule("l"));
         assertTrue((Boolean) schema.getRule("l").getValue("-l"));
+        assertFalse((Boolean) schema.getRule("l").getValue(""));
     }
 
 }
