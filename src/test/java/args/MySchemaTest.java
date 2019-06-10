@@ -24,5 +24,13 @@ class MySchemaTest {
         assertEquals(0,(Integer) schema.getRule("d").getValue(null));
         assertEquals(8080,(Integer) schema.getRule("d").getValue("8080"));
     }
+    @Test
+    void test_create_schema_with_Folder() throws Exception{
+        MySchema schema = new MySchema("l:bool,d:int,f:string");
+        assertNotNull(schema);
+        assertNotNull(schema.getRule("f"));
+        //assertEquals(0,(Integer) schema.getRule("d").getValue(null));
+        //assertEquals(8080,(Integer) schema.getRule("d").getValue("8080"));
+    }
 
 }

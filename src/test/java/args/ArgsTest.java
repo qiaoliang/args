@@ -13,7 +13,7 @@ public class ArgsTest {
         Args args = new Args("l:bool,d:int,f:string", "-l -d 8080 -f /usr/local");
         assertEquals(args.getValue("l"),FALSE);
         assertEquals(args.getValue("d"), new Integer(8080));
-        //assertEquals(args.getValue("f"), "/usr/local");
+        assertEquals(args.getValue("f"), "/usr/local");
     }
 
     @Test

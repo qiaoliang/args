@@ -11,6 +11,7 @@ public class MySchema {
     static{
         meta.put("bool",new BoolRule());
         meta.put("int",new IntegerRule());
+        meta.put("string",new FolderRule());
     }
     public MySchema(String flags) {
         String[] totalFlags= flags.split(",");
