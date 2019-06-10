@@ -14,7 +14,9 @@ public class BoolRule implements MyRule{
     }
 
     @Override
-    public Object getValue(String commands) {
-        return null;
+    public Boolean getValue(String commands) {
+        if(commands.trim().equalsIgnoreCase(defaultTag))
+            return Boolean.TRUE;
+        return Boolean.FALSE;
     }
 }
