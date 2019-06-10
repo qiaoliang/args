@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ArgsTest {
     @org.junit.Test
-    @Ignore
     public void test1() {
         Args args = new Args("l:bool,d:int,f:string", "-l -d 8080 -f /usr/local");
         assertEquals(args.getValue("l"), FALSE);
