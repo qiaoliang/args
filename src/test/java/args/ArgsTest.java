@@ -31,5 +31,7 @@ public class ArgsTest {
         boolean expected = TRUE;
         Args args = new Args("l:bool","");
         assertEquals(args.getValue("l"), FALSE);
+        args = new Args("l:bool","-l");
+        //assertEquals(args.getValue("l"), TRUE);
     }
 }
