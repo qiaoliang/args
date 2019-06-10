@@ -1,5 +1,4 @@
 
-- [ ] 解释schema
 - [ ] 解释Boolean schema，并设置默认值（False）
 - [ ] 解释Int schema,并设置默认值（0）
 - [ ] 解释String schema，并设置默认值（""）

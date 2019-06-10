@@ -26,4 +26,10 @@ public class ArgsTest {
         assertEquals(args.getValue("f"), "/usr/local");
         assertEquals(args.getValue("s"), null);
     }
+    @Test
+    public void test_get_false_with_defualt_boolean_schema() throws Exception{
+        boolean expected = TRUE;
+        Args args = new Args("l:bool","");
+        assertEquals(args.getValue("l"), FALSE);
+    }
 }
