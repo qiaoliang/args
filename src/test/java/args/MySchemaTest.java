@@ -30,7 +30,7 @@ class MySchemaTest {
         assertNotNull(schema);
         assertNotNull(schema.getRule("f"));
         assertEquals(".",(String) schema.getRule("f").getValue(null));
-        //assertEquals(8080,(Integer) schema.getRule("d").getValue("8080"));
+        assertEquals("/user",(String) schema.getRule("f").getValue("/user"));
     }
 
 }
