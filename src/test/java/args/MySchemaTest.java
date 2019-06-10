@@ -15,5 +15,12 @@ class MySchemaTest {
         assertTrue((Boolean) schema.getRule("l").getValue("-l"));
         assertFalse((Boolean) schema.getRule("l").getValue(""));
     }
+    @Test
+    void test_create_schema_with_integer() throws Exception{
+        MySchema schema = new MySchema("l:bool,d:int");
+        assertNotNull(schema);
+        assertNotNull(schema.getRule("d"));
+        assertEquals(0,(Integer) schema.getRule("d").getValue(""));
+    }
 
 }
