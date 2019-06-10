@@ -18,7 +18,6 @@ public class ArgsTest {
     }
 
     @Test
-    @Ignore
     public void test_2() {
         Args args = new Args("l:bool,d:int,f:string,s:string", "-l true -d -9 -f /usr/local -s");
         assertEquals(args.getValue("l"), TRUE);
