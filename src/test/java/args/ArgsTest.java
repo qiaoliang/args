@@ -26,5 +26,4 @@ public class ArgsTest {
         assertEquals(args.getValue("f"), "/usr/local");
         assertEquals(args.getValue("s"), null);
     }
-
 }
