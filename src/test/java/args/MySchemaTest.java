@@ -29,7 +29,7 @@ class MySchemaTest {
         MySchema schema = new MySchema("l:bool,d:int,f:string");
         assertNotNull(schema);
         assertNotNull(schema.getRule("f"));
-        //assertEquals(0,(Integer) schema.getRule("d").getValue(null));
+        assertEquals(".",(String) schema.getRule("f").getValue(null));
         //assertEquals(8080,(Integer) schema.getRule("d").getValue("8080"));
     }
 

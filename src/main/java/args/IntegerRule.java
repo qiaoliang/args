@@ -1,11 +1,10 @@
 package args;
 
 public class IntegerRule implements MyRule {
-    private Integer defaultvalue;
-    private final String defaultTag;
+    private Integer defaultvalue= new Integer(0);
+    private String defaultTag;
 
     public IntegerRule() {
-        defaultvalue = new Integer(0);
         defaultTag= "-d";
     }
     public IntegerRule(String tag) {
