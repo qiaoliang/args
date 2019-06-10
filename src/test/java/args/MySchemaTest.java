@@ -12,7 +12,6 @@ class MySchemaTest {
         MySchema schema = new MySchema("l:bool");
         assertNotNull(schema);
         assertNotNull(schema.getRule("l"));
-
     }
 
 }
