@@ -14,6 +14,8 @@ public class IntegerRule implements MyRule {
 
     @Override
     public Integer getValue(String commands) {
-        return defaultvalue;
+        if(commands.trim().isEmpty())
+            return defaultvalue;
+        return Integer.valueOf(commands.trim());
     }
 }
