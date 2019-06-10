@@ -28,10 +28,7 @@ public class ArgsTest {
     }
     @Test
     public void test_get_false_with_defualt_boolean_schema() throws Exception{
-        boolean expected = TRUE;
         Args args = new Args("l:bool","");
-        assertEquals(args.getValue("l"), FALSE);
-        args = new Args("l:bool","-l");
-        //assertEquals(args.getValue("l"), TRUE);
+        assertEquals(FALSE,args.getValue("l"));
     }
 }

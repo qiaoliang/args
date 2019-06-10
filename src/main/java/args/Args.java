@@ -17,6 +17,8 @@ public class Args {
     public Object getValue(String flag) {
         MyRule rule = mySchema.getRule(flag);
         int index=commands.indexOf("-"+flag);
-        return rule.getValue(index+1<commands.size()? (String) commands.get(index+1) :"");
+        if(index<0)
+            return rule.getValue(null);
+        return rule.getValue(index+1<commands.size()? (String) commands.get(index+1) :null);
     }
 }
