@@ -10,10 +10,13 @@ public class Args {
 
     public Args(String flags, String command) {
         mySchema = new MySchema(flags);
+        if(command==null)
+            command="";
         commands = Arrays.asList(command.split(" "));
     }
-
     public Object getValue(String flag) {
-        return Boolean.FALSE;
+        MyRule rule = mySchema.getRule(flag);
+        int index=commands.indexOf("-"+flag);
+        return rule.getValue(index+1<commands.size()? (String) commands.get(index+1) :"");
     }
 }
